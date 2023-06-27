@@ -1,3 +1,5 @@
+/**This is the js file for the simple age calculator */
+
 /**
  * when we get the date by using
  * .getDate(); it gets the date in the utc
