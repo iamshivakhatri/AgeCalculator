@@ -1,0 +1,96 @@
+<!--This is the HTML page with css for the age calculator-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 60%;
+            font-family: 'poppins', sans-serif;
+        }
+        body{
+           
+            background: rgb(255, 255, 255);
+            
+            height: 100vh;
+        }
+
+       
+
+    
+        .ageCalculator{
+            padding: 20rem 0;
+            font-size: 12rem;
+            
+        }
+        .mainContainer{
+            max-width: 100rem;
+            margin:auto;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(20, 19, 19, 0.1);
+            background: rgb(245, 239, 239);
+            padding:3rem;
+            border-radius: 9px;
+        }
+
+        .topHeader{
+            margin-bottom: 3rem;
+            font-size: 8rem;
+        }
+
+        .inputBox .calculateButton, .date{
+            padding: 2rem;
+            border-radius: 2rem;
+            margin-bottom: 3rem;
+            background: rgb(230, 205, 219);
+            cursor: pointer;
+        }
+
+        .inputBox .p{
+            font-size: 12rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="ageCalculator">
+        <div class="mainContainer">
+
+
+            <div class="calculator">
+                <div class="topHeader">
+                    <span> AGE CALCULATOR </span>
+                </div>
+                
+                <div class="inputBox">
+                    <input type="date" id="date" class="date">
+
+                    <button onclick="calculateAge()" class="calculateButton"> Calculate </button>
+                    <p id="result"></p>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <script src="age.js"> </script>
+
+</body>
+
+</html>
